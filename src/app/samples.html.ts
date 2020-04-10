@@ -1,14 +1,10 @@
-<h1>Responsive Grid Expander Component Demo</h1>
-
-<h2>Demo 1: default title template</h2>
-
-<app-grid-expander [items]="items"></app-grid-expander>
-
-<pre>{{ SAMPLES.DEMO_1 }}</pre>
-<hr />
-
-<h2>Demo 2: subtitle template</h2>
-
+export const SAMPLES = {
+  DEMO_1: `
+<app-grid-expander
+  [items]="items"
+></app-grid-expander>
+`,
+  DEMO_2: `
 <app-grid-expander
   [items]="itemsSubtitle"
   [template]="templateSubtitle"
@@ -16,17 +12,12 @@
   [limit]="9"
 ></app-grid-expander>
 
-<!-- custom subtitle template -->
 <ng-template #templateSubtitle let-item="item">
   <div class="title">{{ item.title }}</div>
   <p class="subtitle">{{ item.subtitle }}</p>
 </ng-template>
-
-<pre>{{ SAMPLES.DEMO_2 }}</pre>
-<hr />
-
-<h2>Demo 3: description template</h2>
-
+  `,
+  DEMO_3: `
 <app-grid-expander
   [items]="itemsDescription"
   [template]="templateDescription"
@@ -34,21 +25,10 @@
   [limit]="6"
 ></app-grid-expander>
 
-<!-- custom description template -->
 <ng-template #templateDescription let-item="item">
   <div class="title">{{ item.title }}</div>
   <p class="subtitle">{{ item.subtitle }}</p>
   <p class="description">{{ item.description }}</p>
 </ng-template>
-
-<pre>{{ SAMPLES.DEMO_3 }}</pre>
-
-<div>
-  <ul>
-    <li>
-      Component uses
-      <a href="http://flexboxgrid.com/"><em>flexboxgrid</em></a> responsive grid
-      classes. Default grid <code>['col-xs-12', 'col-sm-4']</code>
-    </li>
-  </ul>
-</div>
+  `,
+};

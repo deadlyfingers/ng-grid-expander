@@ -1,0 +1,17 @@
+:host {
+  font-family: sans-serif;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .subtitle {
+    color: #ccc;
+    font-size: small;
+  }
+
+  .description {
+    font-size: small;
+    font-style: italic;
+  }
+}

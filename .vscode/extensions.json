@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "msjsdiag.debugger-for-chrome",
+    "angular.ng-template",
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode"
+  ]
+}

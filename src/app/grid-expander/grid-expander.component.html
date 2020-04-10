@@ -1,0 +1,14 @@
+<div class="row">
+  <div *ngFor="let item of displayItems" [ngClass]="grid">
+    <ng-container
+      [ngTemplateOutlet]="template || defaultTemplate"
+      [ngTemplateOutletContext]="{ item: item }">
+    </ng-container>
+  </div>
+</div>
+
+<button *ngIf="hasItemsGreaterThanLimit" (click)="clickMore()">{{ buttonLabel }}</button>
+
+<ng-template #defaultTemplate let-item="item">
+  <div class="title">{{item.title}}</div>
+</ng-template>
