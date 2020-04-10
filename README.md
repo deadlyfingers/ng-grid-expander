@@ -1,4 +1,4 @@
-# NgGridExpander
+# [Angular Grid Expander Component](https://deadlyfingers.github.io/ng-grid-expander/) ![CI](https://github.com/deadlyfingers/ng-grid-expander/workflows/CI/badge.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 

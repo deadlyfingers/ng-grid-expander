@@ -9,6 +9,7 @@
     "build:deploy": "ng build --prod --base-href https://deadlyfingers.github.io/ng-grid-expander/",
     "test": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "test:coverage": "ng test --code-coverage --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "npm run build:deploy",
